@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/navigation_header_layout"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/profile_pic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_people"
+        app:riv_corner_radius="50dp"
+        android:scaleType="centerCrop"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+
+    <TextView
+    android:layout_marginTop="5dp"
+    android:id="@+id/profile_name"
+    app:layout_constraintTop_toTopOf="@id/profile_pic"
+    android:textSize="17sp"
+    app:layout_constraintStart_toEndOf="@id/profile_pic"
+    android:textColor="#000"
+    android:layout_marginStart="5dp"
+    android:text="Sample profile name"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/profile_status"
+        app:layout_constraintTop_toBottomOf="@id/profile_name"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/profile_name"
+        android:textColor="#1FC812"
+        android:text="Currently in game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

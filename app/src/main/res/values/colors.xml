@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#6ab187</color>
+    <color name="primaryDark">#20948b</color>
+    <color name="shadowLands">#de7a22</color>
+    <color name="sandking">#f4cc70</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+</resources>
